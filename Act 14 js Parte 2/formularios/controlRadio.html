@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Edad</title>
+</head>
+<body>
+
+    <form>
+        <p>¿Es mayor de 1 año?</p>
+        <input type="radio" id="mayor" name="edad" value="si"> Sí
+        <br>
+        <input type="radio" id="menor" name="edad" value="no"> No
+        <br>
+        <input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+    </form>
+
+    <script>
+        function mostrarSeleccionado() {
+            if (document.getElementById('mayor').checked) {
+                alert('Puede ingresar al sitio.');
+            }
+            else if (document.getElementById('menor').checked) {
+                alert('No puede ingresar al sitio.');
+            }
+            else {
+                alert('Por favor, seleccione una opción.');
+            }
+        }
+    </script>
+
+</body>
+</html>

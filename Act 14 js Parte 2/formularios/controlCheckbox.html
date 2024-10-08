@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Deportes</title>
+</head>
+<body>
+
+    <form>
+        <input type="checkbox" id="futbol"> Fútbol
+        <br>
+        <input type="checkbox" id="basquet"> Básquet
+        <br>
+        <input type="checkbox" id="tenis"> Tenis
+        <br>
+        <input type="button" value="Mostrar Seleccionados" onClick="mostrarSeleccionados()">
+    </form>
+
+    <script>
+        function mostrarSeleccionados() {
+            let deportesSeleccionados = [];
+            if (document.getElementById('futbol').checked) {
+                deportesSeleccionados.push('Fútbol');
+            }
+            if (document.getElementById('basquet').checked) {
+                deportesSeleccionados.push('Básquet');
+            }
+            if (document.getElementById('tenis').checked) {
+                deportesSeleccionados.push('Tenis');
+            }
+            if (deportesSeleccionados.length > 0) {
+                alert('Deportes seleccionados: ' + deportesSeleccionados.join(', '));
+            } else {
+                alert('No se seleccionó ningún deporte.');
+            }
+        }
+    </script>
+
+</body>
+</html>

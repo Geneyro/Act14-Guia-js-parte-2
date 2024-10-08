@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia JS</title>
+</head>
+<body>
+    <main>
+        <!-- <script>
+            //Introducción
+            document.write("Hola soy Lautaro","<br>","Tengo 24 años")
+        </script>
+        <script>
+            //Variables
+            document.write("Lautaro")
+            let nombre = "Empleado Lautaro";
+            let sueldo = 300000;
+            document.write("<br>",nombre,"<br>",sueldo)
+        </script>
+        <script>
+            //Entrada de datos por teclado
+            let nombre1;
+            let mail;
+            nombre1 = prompt("Ingrese su nombre:");
+            mail = prompt("Ingrese su mail:");
+            document.write("Hola");
+            document.write(nombre1);
+            document.write("Ingrese su mail:");
+            document.write(mail);
+        </script>
+        <script>
+            //Estructuras secuenciales de programación: Perimetro
+            let longitud = prompt("Ingrese valor de lado")
+            perimetro = parseInt(longitud)*4;
+            document.write("el perimetro del cuadrado", longitud,"centimetros de lado es:",perimetro);
+        </script>
+        <script>
+            //Suma dos primeros, Producto 3 y 4
+            let num1,num2,num3,num4
+            let suma;
+            let producto;
+            num1 = parseInt(prompt("Ingrese numero 1:"));
+            num2 = parseInt(prompt("Ingrese numero 2:"));
+            num3 = parseInt(prompt("Ingrese numero 3:"));
+            num4 = parseInt(prompt("Ingrese numero 4:"));
+            suma = (num1+num2);
+            producto = (num3*num4)
+            document.write(suma,"<br>",producto)
+        </script>
+        <script>
+            //Estructuras condiconales simples
+            let nota1, nota2, nota3;
+            let promedio;
+            nota1 = parseInt(prompt("Ingrese nota 1:"));
+            nota2 = parseInt(prompt("Ingrese nota 2:"));
+            nota3 = parseInt(prompt("Ingrese nota 3:"));
+            promedio = (nota1 + nota2 + nota3)/3;
+            if (promedio>=7) {document.write("promocionado");}
+        </script>
+        <script>
+            //Estructuras condicionales compuestas.	
+            let valor1, valor2;
+            valor1 = parseInt(prompt("Ingrese valor 1:"));
+            valor2 = parseInt(prompt("Ingrese valor 2:"));
+            if (valor1 > valor2){
+                let suma = valor1+valor2;
+                let resta = valor1-valor2;
+                document.write("La suma es:",suma,"<br>","La resta es:",resta);
+            }
+            else{
+                let producto = valor1*valor2;
+                let division = valor1/valor2;
+                document.write("El producto es:",producto,"<br>","La division es:",division);
+            }
+        </script>
+        <script>
+            //Estructuras condicionales anidadas.	
+            let dia, mes,año;
+            dia = parseInt(prompt("Ingrese el día:"));
+            mes  = parseInt(prompt("Ingrese el mes:"));
+            año = parseInt(prompt("Ingrese nota año:"));
+            if (dia = 25,mes = 12){
+                document.write("Es navidad")
+            }
+        </script>
+        <script>
+            //Operadores lógicos || (o) en las estructuras condicionales.	
+            let cifra1,cifra2,cifra3;
+            cifra1 = parseInt(prompt("Ingrese la primer cifra:"));
+            cifra2 = parseInt(prompt("Ingrese la segunda cifra:"));
+            cifra3 = parseInt(prompt("Ingrese la tercer cifra:"));
+            if(cifra1<10|| cifra2 < 10|| cifra3 < 10){
+                document.write("Alguno de los valores es menor a 10")
+            }
+        </script>
+        <script>
+            //Estructuras switch
+            let palabra;
+            palabra = prompt("Ingrese la palabra:")
+            switch(palabra){
+                case "mesa": 
+                document.write("table")
+            }
+        </script> -->
+        <!-- <script>
+            //Estructura repetitiva (while)	
+            let valor = 11;
+            let contador = 0;
+            while(contador < 25){
+                document.write("valor:" + contador + "es:" + valor + "<br>");
+                contador++;
+                valor = valor + 11;
+            }
+        </script> -->
+        <!-- <script>
+            // Concepto acumulador
+            let mayoresOIguales7 = 0;
+            let menores7 = 0;
+            let contador = 1;
+
+            while (contador <= 10) {
+            let nota = parseInt(prompt("Ingrese la nota del alumno " + contador + ":"));
+
+            if (nota >= 7) {
+            mayoresOIguales7++;
+            } else {
+            menores7++;
+            }
+
+            contador++;
+        }
+
+        document.write("Cantidad de alumnos con notas mayores o iguales a 7: " + mayoresOIguales7 + "<br>");
+        document.write("Cantidad de alumnos con notas menores a 7: " + menores7 + "<br>");
+        </script> -->
+        <!-- <script>
+            //Estructura repetitiva (do/while)
+            let valor;
+            let suma = 0;
+            do {
+                valor = parseInt(prompt('Ingrese un valor (la suma no debe superar 9999):'));
+                if (suma + valor <= 9999) {
+                    suma += valor;
+                } else {
+                    alert('La suma de los valores no debe superar 9999. No se sumará este valor.');
+                    break;
+                    }
+            } while (valor !== 9999);
+            document.write('La suma acumulada es: ' + suma + '<br>');
+            if (suma > 0) {
+                document.write('El valor acumulado es mayor a cero.');
+            } else if (suma < 0) {
+                document.write('El valor acumulado es menor a cero.');
+            } else {
+                document.write('El valor acumulado es igual a cero.');
+            }
+        </script> -->
+        <!-- <script>
+            //Estructura repetitiva (for)	
+            let sumaUltimos5 = 0;
+            let numeros = [];
+
+            for (let f = 1; f <= 10; f++) {
+                let numero = parseInt(prompt('Ingrese el número ' + f + ':'));
+                numeros.push(numero);
+                }
+            for (let i = 5; i < 10; i++) {
+                sumaUltimos5 += numeros[i];
+                }
+                document.write('La suma de los últimos 5 valores ingresados es: ' + sumaUltimos5);
+        </script> -->
+        <!-- <script>
+            //Funciones
+            function mostrarNumeros() {
+            let menor = parseInt(prompt('Ingrese el número menor:'));
+            let mayor = parseInt(prompt('Ingrese el número mayor:'));
+            if (menor >= mayor) {
+                document.write('El primer número debe ser menor que el segundo.<br>');
+            } else {
+                for (let i = menor; i <= mayor; i++) {
+                    document.write(i + ' ');
+                }
+            }
+        }
+        mostrarNumeros();
+        </script> -->
+        <!-- <script>
+            //Funciones con parámetros
+            function enteros(numero1,numero2,numero3){
+                return Math.min(numero1,numero2,numero3);
+            }
+            let numero1 = parseInt(prompt("Ingrese el primer numero:"));
+            let numero2 = parseInt(prompt("Ingrese el segundo numero:"));
+            let numero3 = parseInt(prompt("Ingrese el tercer numero:"));
+            let resultado = enteros(numero1, numero2, numero3);
+            document.write(resultado);
+        </script> -->
+        <!-- <script>
+            //Funciones que retornan un valor.		
+            function obtenerMayor(a, b, c) {
+                if (a > b && a > c) {
+                    return a; 
+                } else if (b > c) {
+                    return b; 
+                } else {
+                    return c;
+                    }
+                }
+            let num1 = parseInt(prompt("Ingrese el primer número:"));
+            let num2 = parseInt(prompt("Ingrese el segundo número:"));
+            let num3 = parseInt(prompt("Ingrese el tercer número:"));
+            let mayor = obtenerMayor(num1, num2, num3);
+            document.write("El mayor número es: " + mayor);
+        </script> -->
+        <!-- <script>
+            //Clase date
+            function mostrarCuatrimestre() {
+            let fecha = new Date();
+            let mes = fecha.getMonth() + 1;
+            if (mes >= 1 && mes <= 4) {
+                document.write("Estamos en el primer cuatrimestre del año.");
+            } else if (mes >= 5 && mes <= 8) {
+                document.write("Estamos en el segundo cuatrimestre del año.");
+            } else if (mes >= 9 && mes <= 12) {
+                document.write("Estamos en el tercer cuatrimestre del año.");
+            }
+        }
+        mostrarCuatrimestre();
+        </script> -->
+        <!-- <script>
+            //Clase Array
+            function cargarVector(vector) {
+                for (let i = 0; i < vector.length; i++) {
+            let valor = prompt('Ingrese un valor:');
+            vector[i] = parseInt(valor);
+        }
+    }
+    function procesarVector(vector) {
+        let sumaTotal = 0;
+        let sumaMayores36 = 0;
+        let cantidadMayores50 = 0;
+        for (let i = 0; i < vector.length; i++) {
+        sumaTotal += vector[i];
+        if (vector[i] > 36) {
+            sumaMayores36 += vector[i];
+        }
+        if (vector[i] > 50) {
+            cantidadMayores50++;
+        }
+    }
+    document.write('Suma total de los elementos: ' + sumaTotal + '<br>');
+    document.write('Suma de los elementos mayores a 36: ' + sumaMayores36 + '<br>');
+    document.write('Cantidad de valores mayores a 50: ' + cantidadMayores50 + '<br>');
+    }
+    let vector = new Array(8);
+    cargarVector(vector);
+    procesarVector(vector);
+        </script> -->
+    <!-- <script>
+        //Clase Math
+        let valor = parseInt(prompt('Ingrese un valor para calcular su raíz cuadrada:'));
+        if (valor < 0) {
+            document.write('Error: No se puede calcular la raíz cuadrada de un número negativo.');
+        } else {
+            let raizCuadrada = Math.sqrt(valor);
+            document.write('La raíz cuadrada de ' + valor + ' es: ' + raizCuadrada);
+        }
+    </script> -->
+    <!-- <script>
+        //Clase String
+        let nombres = [];
+        let nombre;
+
+        do {
+            nombre = prompt('Ingrese un nombre (o "Fin" para terminar):');if (nombre !== 'Fin') {
+                nombres.push(nombre);
+            }
+        }  while (nombre !== 'Fin');
+        document.write('Se ingresaron ' + nombres.length + ' nombres.<br>');
+        document.write('Los nombres ingresados son:<br>');
+        for (let i = 0; i < nombres.length; i++) {
+            document.write(nombres[i] + '<br>');
+        }
+    </script> -->
+    </main>
+
+</body>
+</html>

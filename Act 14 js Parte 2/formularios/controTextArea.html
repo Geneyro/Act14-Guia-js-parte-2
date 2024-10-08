@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Visitas</title>
+</head>
+<body>
+
+    <form>
+        <p>
+            Nombre: <input type="text" id="nombre" required>
+        </p>
+        <p>
+            Correo Electrónico: <input type="email" id="email" required>
+        </p>
+        <p>
+            Comentarios:<br>
+            <textarea id="comentarios" rows="10" cols="50" required></textarea>
+        </p>
+        <p>
+            <input type="button" value="Mostrar" onClick="mostrarDatos()">
+        </p>
+    </form>
+
+    <script>
+        function mostrarDatos() {
+            let nombre = document.getElementById('nombre').value;
+            let email = document.getElementById('email').value;
+            let comentarios = document.getElementById('comentarios').value;
+            if (nombre && email && comentarios) {
+                alert('Nombre: ' + nombre + '\n' +
+                      'Email: ' + email + '\n' +
+                      'Comentarios: ' + comentarios);
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+    </script>
+
+</body>
+</html>

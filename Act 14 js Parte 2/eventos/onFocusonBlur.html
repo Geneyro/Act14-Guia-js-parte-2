@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+</head>
+<body>
+
+    <form>
+        <p>
+            Nombre: <input type="text" id="nombre" onFocus="vaciar(this)" value="nombre"><br>
+        </p>
+        <p>
+            Clave: <input type="password" id="clave" onBlur="verificarClave(this)"><br>
+        </p>
+        <p>
+            <input type="button" value="Confirmar" onClick="mostrarDatos()">
+        </p>
+    </form>
+    <script>
+        function vaciar(control) {
+            control.value = '';
+        }
+
+        function verificarClave(control) {
+            const clave = control.value;
+            if (clave.length < 7 || clave.length > 20) {
+                alert('La clave debe tener entre 7 y 20 caracteres.');
+            }
+        }
+
+        function mostrarDatos() {
+            const nombre = document.getElementById('nombre').value;
+            const clave = document.getElementById('clave').value;
+
+            alert('Nombre: ' + nombre + '\n' + 'Clave: ' + clave);
+        }
+    </script>
+</body>
+</html>

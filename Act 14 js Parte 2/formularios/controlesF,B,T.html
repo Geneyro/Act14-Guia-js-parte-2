@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevar al Cubo</title>
+</head>
+<body>
+
+    <form>
+        <p>Ingrese un número entero: <input type="text" id="numero"></p>
+        <p><input type="button" value="Calcular Cubo" onClick="calcularCubo()"></p>
+    </form>
+
+    <script>
+        function calcularCubo() {
+            let num = document.getElementById('numero').value;
+            let entero = parseInt(num);
+            if (isNaN(entero)) {
+                alert('Por favor, ingrese un número válido.');
+            } else {
+                let cubo = Math.pow(entero, 3);
+                alert('El cubo de ' + entero + ' es: ' + cubo);
+            }
+        }
+    </script>
+
+</body>
+</html>
